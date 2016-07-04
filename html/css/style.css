@@ -1,0 +1,94 @@
+@import url('normalize.css');
+
+
+/*:::::: Fonts ::::::::*/
+@font-face {font-family:"heavy";/*----------->  */
+			src:url('../fonts/.eot');
+    		src: local('☺'), url('../fonts/.woff') format('woff'), 
+                        url('../fonts/.ttf') format('truetype'),
+                        url('../fonts/.svg#webfont') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-variant: normal;
+}
+
+
+
+/*//////////////
+
+   BODY/HTML
+
+///////////////////*/
+html,
+body {
+ 	margin:0;
+    padding:0;
+    height:100%;
+	-webkit-text-size-adjust: none; /* For iphone Landscape */
+	-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-o-font-smoothing: antialiased;-ms-font-smoothing: antialiased; /* For font looks antialiased */
+    -moz-osx-font-smoothing: grayscale; /* Moz antialiased */
+    text-rendering: optimizeLegibility; /* optimezy fonts */
+}
+
+
+/*---- Clear ----*/
+.clear:after {content:"";display:block;height:0;clear:both;visibility:hidden;}
+.clear {display:inline-block;}
+.clear {display:block;}
+* html .clear {height:1px;}
+
+/*------- Transition ---------*/
+a, input, textarea, button {-webkit-transition:.4s;-moz-transition:.4s;-o-transition:.4s;-ms-transition:.4s;transition:.4s;}
+
+
+/*--- inner block ----*/
+.inner-block {position: relative; height: auto; width: 900px;margin: 0 auto;}
+
+
+/*--- Other ----*/
+input, textarea {padding: 6px 2%;font-size: 14px;color: #555;background-color: #fff;border: 1px solid #ccc;border-radius: 4px;}
+textarea {resize: none; height: 100px;}
+input:focus, textarea:focus {border-color: #0091d1;} 
+button {cursor: pointer; padding: 10px 30px; color: #fff;background:#0091d1;font-size: 20px;font-weight: lighter;}
+button:hover {opacity: .5;}
+
+
+/*//////////////
+
+   WRAPPER
+
+///////////////////*/
+#wrapper {min-height:100%;position:relative;width:100%;}
+
+
+/*//////////////
+
+   HEADER 
+
+///////////////////*/
+header { width: 100%;}
+
+/*//////////////
+
+   CONTENT
+
+///////////////////*/
+#content{ height:auto;width:100%; }
+
+
+
+/*////////////////
+
+		FIX
+
+///////////////////////*/
+.fix { width:100%;}
+	
+/*//////////////
+
+  FOOTER
+
+///////////////////*/
+footer {width:100%;position:absolute;bottom:0;left:0;}
+
+
